@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251228_000626_3eb34595",
+  "timestamp": "2025-12-28 00:06:26",
+  "source": "web",
+  "gender": "male",
+  "question": "性格 命运 事业 前途 爱好 女人缘好 性格偏激",
+  "photo_path": "photos/web_20251228_000626_3eb34595.jpg",
+  "report_path": "reports/web_20251228_000626_3eb34595_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "高挺",
+    "mouth": "适中",
+    "face_shape": "oval"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.089
+    },
+    "middle": {
+      "ratio": 0.453
+    },
+    "lower": {
+      "ratio": 0.458
+    },
+    "eyes": {
+      "left_ratio": 0.591,
+      "right_ratio": 0.591
+    },
+    "nose": {
+      "ratio": 2.102
+    },
+    "mouth": {
+      "ratio": 0.374
+    },
+    "face": {
+      "width": 0.142,
+      "height": 0.171,
+      "shape_ratio": 1.204
+    }
+  },
+  "report_length": 2963,
+  "photo_size": 215706
+}

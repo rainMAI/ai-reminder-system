@@ -1,0 +1,135 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "Generate daily AI reports for all devices" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:services.eye_display_service:眼睛显示服务已创建: COM3@115200
+INFO:services.eye_display_service:尝试连接到 COM3 (第 1/3 次)...
+WARNING:services.eye_display_service:连接失败 (第 1 次): [Errno 2] could not open port COM3: [Errno 2] No such file or directory: 'COM3'
+INFO:services.eye_display_service:尝试连接到 COM3 (第 2/3 次)...
+WARNING:services.eye_display_service:连接失败 (第 2 次): [Errno 2] could not open port COM3: [Errno 2] No such file or directory: 'COM3'
+INFO:services.eye_display_service:尝试连接到 COM3 (第 3/3 次)...
+WARNING:services.eye_display_service:连接失败 (第 3 次): [Errno 2] could not open port COM3: [Errno 2] No such file or directory: 'COM3'
+ERROR:services.eye_display_service:❌ 连接失败，已重试 3 次
+ERROR:services.eye_display_service:眼睛服务启动失败
+✅ 面相检测模块加载成功
+[OK] Reminder TTS module loaded
+[OK] Reminder TTS routes registered
+   Endpoint: http://0.0.0.0:8081/api/text_to_opus
+[OK] Device management routes registered
+     Endpoints:
+       POST   /api/devices/register  (ESP32 auto-register)
+       POST   /api/devices/manual    (Manual add)
+       GET    /api/devices
+       GET    /api/devices/<id>
+       PUT    /api/devices/<id>
+       DELETE /api/devices/<id>
+       POST   /api/devices/heartbeat
+[OK] Device management routes registered
+[OK] Eye Display module loaded
+[OK] Eye Display routes registered
+     API endpoints:
+       - GET/POST /api/eye/status - 获取服务状态
+       - POST /api/eye/expression - 设置表情
+       - POST /api/eye/animation - 播放动画
+       - POST /api/eye/text - 显示文字
+       - POST /api/eye/brightness - 设置亮度
+       - POST /api/eye/happy - 开心表情
+       - POST /api/eye/sad - 伤心表情
+       - POST /api/eye/angry - 生气表情
+       - POST /api/eye/surprised - 惊讶表情
+       - POST /api/eye/neutral - 中性表情
+       - POST /api/eye/thinking - 思考表情
+       - POST /api/eye/listening - 聆听表情
+       - POST /api/eye/blink - 眨眼动画
+       - POST /api/eye/talk - 说话动画
+       - POST /api/eye/idle - 空闲动画
+       - POST /api/eye/test - 测试所有功能
+[OK] Reminder CRUD routes registered
+     Endpoints:
+       POST   /api/reminders
+       GET    /api/reminders
+       GET    /api/reminders/stats        # 获取统计信息 ✨
+       GET    /api/reminders/<id>
+       PUT    /api/reminders/<id>
+       DELETE /api/reminders/<id>
+       POST   /api/reminders/<id>/complete
+[OK] Reminder CRUD routes registered
+[OK] Device sync routes registered
+     Endpoints:
+       GET    /api/sync/pull
+       POST   /api/sync/push
+       POST   /api/sync/complete
+       GET    /api/sync/status
+[OK] Device sync routes registered
+[OK] Reminder Management System loaded
+     Web interface: http://192.140.190.183:8081/web-reminder/
+     API endpoints:
+       - Devices:  POST/GET/PUT/DELETE /api/devices/...
+       - Reminders: POST/GET/PUT/DELETE /api/reminders/...
+       - Sync:      GET/POST /api/sync/...
+[WARNING] 数据库检查失败: No module named 'startup_db_check'
+============================================================
+Web面相分析服务器
+============================================================
+监听地址: 0.0.0.0:8081
+Web界面: http://localhost:8081
+健康检查: http://localhost:8081/health
+
+分析历史存储:
+  基础目录: web_history/
+  - photos/     用户上传的照片
+  - reports/    LLM生成的详细报告
+  - metadata/   分析元数据
+  - index.json  全局索引
+
+等待访问...
+============================================================
+
+[OK] Chat routes registered:
+     - POST /api/chats/batch
+     - GET  /api/chats/<device_mac>/<date>
+[OK] Chat messages routes registered
+[OK] Report routes registered:
+     - POST /api/reports/generate
+     - GET  /api/reports/<device_mac>/<date>
+     - GET  /api/reports/<device_mac>/<date>/json
+[OK] Report routes registered
+[ReportScheduler] Started (scheduled for 23:00 daily)
+[OK] Daily report scheduler started (23:00 daily)
+[OK] Auth routes registered:
+     - POST /api/auth/register
+     - POST /api/auth/login
+     - GET  /api/auth/verify
+     - POST /api/auth/logout
+     - GET  /api/auth/user
+     - GET  /api/auth/devices
+[OK] Auth routes registered
+[OK] Chat Manager routes registered:
+     - GET  /api/devices                        # 获取设备列表 ✨
+     - GET  /api/chats/<device_mac>              # 获取对话记录
+     - GET  /api/chats/stats                     # 获取统计信息
+     - GET  /api/reports/list                    # 获取报告列表
+     - GET  /api/manager                         # 管理页面
+[OK] Chat Manager routes registered
+[OK] User Device routes registered:
+     - POST /api/user/devices/add
+     - POST /api/user/devices/unbind
+     - GET  /api/user/devices
+     - POST /api/user/devices/set-primary
+[OK] User Device routes registered
+[INFO] 正在启动眼睛显示服务: COM3@115200
+[WARNING] 眼睛显示服务启动失败，将继续运行但眼睛功能不可用
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8081
+ * Running on http://172.19.57.194:8081
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:25:07] "GET /api/sync/pull HTTP/1.1" 200 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:26:07] "GET /api/sync/pull HTTP/1.1" 200 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:27:05] "[33mGET /api/reports/10:20:ba:45:bd:58/2026-02-13/json HTTP/1.1[0m" 404 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:27:05] "[33mGET /api/reports/10:20:ba:45:bd:58/2026-02-13/json HTTP/1.1[0m" 404 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:27:07] "GET /api/sync/pull HTTP/1.1" 200 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:28:07] "GET /api/sync/pull HTTP/1.1" 200 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:29:07] "GET /api/sync/pull HTTP/1.1" 200 -
+INFO:werkzeug:112.66.37.153 - - [13/Feb/2026 14:29:58] "POST /api/text_to_pcm HTTP/1.1" 200 -

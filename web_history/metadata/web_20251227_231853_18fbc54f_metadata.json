@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251227_231853_18fbc54f",
+  "timestamp": "2025-12-27 23:18:53",
+  "source": "web",
+  "gender": "female",
+  "question": "财富婚姻健康父母",
+  "photo_path": "photos/web_20251227_231853_18fbc54f.jpg",
+  "report_path": "reports/web_20251227_231853_18fbc54f_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "高挺",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.122
+    },
+    "middle": {
+      "ratio": 0.563
+    },
+    "lower": {
+      "ratio": 0.314
+    },
+    "eyes": {
+      "left_ratio": 0.709,
+      "right_ratio": 0.709
+    },
+    "nose": {
+      "ratio": 2.233
+    },
+    "mouth": {
+      "ratio": 0.352
+    },
+    "face": {
+      "width": 0.355,
+      "height": 0.324,
+      "shape_ratio": 0.914
+    }
+  },
+  "report_length": 2646,
+  "photo_size": 3381196
+}

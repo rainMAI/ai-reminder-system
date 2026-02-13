@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251227_093102_1f134ff4",
+  "timestamp": "2025-12-27 09:31:02",
+  "source": "web",
+  "gender": "male",
+  "question": "分析性格特点和运势",
+  "photo_path": "photos\\web_20251227_093102_1f134ff4.jpg",
+  "report_path": "reports\\web_20251227_093102_1f134ff4_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "适中",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.097
+    },
+    "middle": {
+      "ratio": 0.463
+    },
+    "lower": {
+      "ratio": 0.441
+    },
+    "eyes": {
+      "left_ratio": 0.59,
+      "right_ratio": 0.59
+    },
+    "nose": {
+      "ratio": 1.805
+    },
+    "mouth": {
+      "ratio": 0.373
+    },
+    "face": {
+      "width": 0.459,
+      "height": 0.426,
+      "shape_ratio": 0.929
+    }
+  },
+  "report_length": 2706,
+  "photo_size": 54669
+}

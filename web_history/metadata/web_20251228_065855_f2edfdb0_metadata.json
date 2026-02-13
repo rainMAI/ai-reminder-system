@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251228_065855_f2edfdb0",
+  "timestamp": "2025-12-28 06:58:55",
+  "source": "web",
+  "gender": "male",
+  "question": "分析财运和健康",
+  "photo_path": "photos/web_20251228_065855_f2edfdb0.jpg",
+  "report_path": "reports/web_20251228_065855_f2edfdb0_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "塌鼻",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.098
+    },
+    "middle": {
+      "ratio": 0.521
+    },
+    "lower": {
+      "ratio": 0.381
+    },
+    "eyes": {
+      "left_ratio": 0.608,
+      "right_ratio": 0.608
+    },
+    "nose": {
+      "ratio": 1.175
+    },
+    "mouth": {
+      "ratio": 0.368
+    },
+    "face": {
+      "width": 0.448,
+      "height": 0.24,
+      "shape_ratio": 0.536
+    }
+  },
+  "report_length": 2736,
+  "photo_size": 3148132
+}

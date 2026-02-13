@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251227_231417_2e4130a9",
+  "timestamp": "2025-12-27 23:14:17",
+  "source": "web",
+  "gender": "female",
+  "question": "财富婚姻健康",
+  "photo_path": "photos/web_20251227_231417_2e4130a9.jpg",
+  "report_path": "reports/web_20251227_231417_2e4130a9_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "适中",
+    "mouth": "大嘴",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.119
+    },
+    "middle": {
+      "ratio": 0.567
+    },
+    "lower": {
+      "ratio": 0.314
+    },
+    "eyes": {
+      "left_ratio": 0.735,
+      "right_ratio": 0.735
+    },
+    "nose": {
+      "ratio": 1.722
+    },
+    "mouth": {
+      "ratio": 0.461
+    },
+    "face": {
+      "width": 0.404,
+      "height": 0.368,
+      "shape_ratio": 0.912
+    }
+  },
+  "report_length": 2681,
+  "photo_size": 7374447
+}

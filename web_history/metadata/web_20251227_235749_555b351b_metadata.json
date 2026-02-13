@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251227_235749_555b351b",
+  "timestamp": "2025-12-27 23:57:49",
+  "source": "web",
+  "gender": "male",
+  "question": "性格特点 运势 爱好 喜好等",
+  "photo_path": "photos/web_20251227_235749_555b351b.jpg",
+  "report_path": "reports/web_20251227_235749_555b351b_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "塌鼻",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.096
+    },
+    "middle": {
+      "ratio": 0.446
+    },
+    "lower": {
+      "ratio": 0.457
+    },
+    "eyes": {
+      "left_ratio": 0.566,
+      "right_ratio": 0.566
+    },
+    "nose": {
+      "ratio": 0.706
+    },
+    "mouth": {
+      "ratio": 0.397
+    },
+    "face": {
+      "width": 0.284,
+      "height": 0.119,
+      "shape_ratio": 0.418
+    }
+  },
+  "report_length": 2797,
+  "photo_size": 750222
+}

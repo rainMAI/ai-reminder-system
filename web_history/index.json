@@ -1,0 +1,875 @@
+{
+  "analyses": [
+    {
+      "analysis_id": "web_20251227_091845_2496dda4",
+      "timestamp": "2025-12-27 09:18:45",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_091845_2496dda4.jpg",
+      "report_path": "reports\\web_20251227_091845_2496dda4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_093102_1f134ff4",
+      "timestamp": "2025-12-27 09:31:02",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_093102_1f134ff4.jpg",
+      "report_path": "reports\\web_20251227_093102_1f134ff4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_101758_f823b449",
+      "timestamp": "2025-12-27 10:17:58",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_101758_f823b449.jpg",
+      "report_path": "reports\\web_20251227_101758_f823b449_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "大嘴",
+        "face_shape": "长脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_104122_ec7a9213",
+      "timestamp": "2025-12-27 10:41:22",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_104122_ec7a9213.jpg",
+      "report_path": "reports\\web_20251227_104122_ec7a9213_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_104701_8b250b84",
+      "timestamp": "2025-12-27 10:47:01",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_104701_8b250b84.jpg",
+      "report_path": "reports\\web_20251227_104701_8b250b84_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_105329_d5b73fa4",
+      "timestamp": "2025-12-27 10:53:29",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_105329_d5b73fa4.jpg",
+      "report_path": "reports\\web_20251227_105329_d5b73fa4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_105528_5db5ad5e",
+      "timestamp": "2025-12-27 10:55:28",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_105528_5db5ad5e.jpg",
+      "report_path": "reports\\web_20251227_105528_5db5ad5e_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "大嘴",
+        "face_shape": "长脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_105844_13930c0a",
+      "timestamp": "2025-12-27 10:58:44",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos\\web_20251227_105844_13930c0a.jpg",
+      "report_path": "reports\\web_20251227_105844_13930c0a_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_204324_630d7679",
+      "timestamp": "2025-12-27 20:43:24",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_204324_630d7679.jpg",
+      "report_path": "reports/web_20251227_204324_630d7679_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_204441_bbd0ba4f",
+      "timestamp": "2025-12-27 20:44:41",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_204441_bbd0ba4f.jpg",
+      "report_path": "reports/web_20251227_204441_bbd0ba4f_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_214832_fed72ec4",
+      "timestamp": "2025-12-27 21:48:32",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_214832_fed72ec4.jpg",
+      "report_path": "reports/web_20251227_214832_fed72ec4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_215606_bb744065",
+      "timestamp": "2025-12-27 21:56:06",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_215606_bb744065.jpg",
+      "report_path": "reports/web_20251227_215606_bb744065_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_221925_544302d7",
+      "timestamp": "2025-12-27 22:19:25",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_221925_544302d7.jpg",
+      "report_path": "reports/web_20251227_221925_544302d7_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_223051_f09c399b",
+      "timestamp": "2025-12-27 22:30:51",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_223051_f09c399b.jpg",
+      "report_path": "reports/web_20251227_223051_f09c399b_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_224419_4bd462a0",
+      "timestamp": "2025-12-27 22:44:19",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_224419_4bd462a0.jpg",
+      "report_path": "reports/web_20251227_224419_4bd462a0_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_224548_767ddf78",
+      "timestamp": "2025-12-27 22:45:48",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_224548_767ddf78.jpg",
+      "report_path": "reports/web_20251227_224548_767ddf78_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_231129_5b50b21a",
+      "timestamp": "2025-12-27 23:11:29",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_231129_5b50b21a.jpg",
+      "report_path": "reports/web_20251227_231129_5b50b21a_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_231417_2e4130a9",
+      "timestamp": "2025-12-27 23:14:17",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251227_231417_2e4130a9.jpg",
+      "report_path": "reports/web_20251227_231417_2e4130a9_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "大嘴",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_231853_18fbc54f",
+      "timestamp": "2025-12-27 23:18:53",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251227_231853_18fbc54f.jpg",
+      "report_path": "reports/web_20251227_231853_18fbc54f_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_233244_37433fe8",
+      "timestamp": "2025-12-27 23:32:44",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_233244_37433fe8.jpg",
+      "report_path": "reports/web_20251227_233244_37433fe8_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "大嘴",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251227_235749_555b351b",
+      "timestamp": "2025-12-27 23:57:49",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251227_235749_555b351b.jpg",
+      "report_path": "reports/web_20251227_235749_555b351b_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_000458_b78af635",
+      "timestamp": "2025-12-28 00:04:58",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_000458_b78af635.jpg",
+      "report_path": "reports/web_20251228_000458_b78af635_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "oval"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_000623_71497867",
+      "timestamp": "2025-12-28 00:06:23",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_000623_71497867.jpg",
+      "report_path": "reports/web_20251228_000623_71497867_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "oval"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_000626_3eb34595",
+      "timestamp": "2025-12-28 00:06:26",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_000626_3eb34595.jpg",
+      "report_path": "reports/web_20251228_000626_3eb34595_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "oval"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_002327_90283ed4",
+      "timestamp": "2025-12-28 00:23:27",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_002327_90283ed4.jpg",
+      "report_path": "reports/web_20251228_002327_90283ed4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_003033_9b7f498c",
+      "timestamp": "2025-12-28 00:30:33",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_003033_9b7f498c.jpg",
+      "report_path": "reports/web_20251228_003033_9b7f498c_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_003917_953bdc53",
+      "timestamp": "2025-12-28 00:39:17",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_003917_953bdc53.jpg",
+      "report_path": "reports/web_20251228_003917_953bdc53_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_004740_95e96f92",
+      "timestamp": "2025-12-28 00:47:40",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_004740_95e96f92.jpg",
+      "report_path": "reports/web_20251228_004740_95e96f92_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_014504_9c814d20",
+      "timestamp": "2025-12-28 01:45:04",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_014504_9c814d20.jpg",
+      "report_path": "reports/web_20251228_014504_9c814d20_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "大嘴",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_014902_544c7779",
+      "timestamp": "2025-12-28 01:49:02",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_014902_544c7779.jpg",
+      "report_path": "reports/web_20251228_014902_544c7779_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "长脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_065353_cab68121",
+      "timestamp": "2025-12-28 06:53:53",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_065353_cab68121.jpg",
+      "report_path": "reports/web_20251228_065353_cab68121_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "小嘴",
+        "face_shape": "长脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_065855_f2edfdb0",
+      "timestamp": "2025-12-28 06:58:55",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_065855_f2edfdb0.jpg",
+      "report_path": "reports/web_20251228_065855_f2edfdb0_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_071331_76c7e939",
+      "timestamp": "2025-12-28 07:13:31",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_071331_76c7e939.jpg",
+      "report_path": "reports/web_20251228_071331_76c7e939_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_090331_82f622ba",
+      "timestamp": "2025-12-28 09:03:31",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_090331_82f622ba.jpg",
+      "report_path": "reports/web_20251228_090331_82f622ba_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_092925_0f99e6a3",
+      "timestamp": "2025-12-28 09:29:25",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_092925_0f99e6a3.jpg",
+      "report_path": "reports/web_20251228_092925_0f99e6a3_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_094839_fc288d02",
+      "timestamp": "2025-12-28 09:48:39",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_094839_fc288d02.jpg",
+      "report_path": "reports/web_20251228_094839_fc288d02_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_100551_425f38cb",
+      "timestamp": "2025-12-28 10:05:51",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_100551_425f38cb.jpg",
+      "report_path": "reports/web_20251228_100551_425f38cb_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_101221_40934108",
+      "timestamp": "2025-12-28 10:12:21",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_101221_40934108.jpg",
+      "report_path": "reports/web_20251228_101221_40934108_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_101852_4ffce95b",
+      "timestamp": "2025-12-28 10:18:52",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_101852_4ffce95b.jpg",
+      "report_path": "reports/web_20251228_101852_4ffce95b_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_102617_46e27e09",
+      "timestamp": "2025-12-28 10:26:17",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_102617_46e27e09.jpg",
+      "report_path": "reports/web_20251228_102617_46e27e09_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_102927_96f71079",
+      "timestamp": "2025-12-28 10:29:27",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_102927_96f71079.jpg",
+      "report_path": "reports/web_20251228_102927_96f71079_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_103716_ca578ef4",
+      "timestamp": "2025-12-28 10:37:16",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_103716_ca578ef4.jpg",
+      "report_path": "reports/web_20251228_103716_ca578ef4_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_104331_b074f0b3",
+      "timestamp": "2025-12-28 10:43:31",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_104331_b074f0b3.jpg",
+      "report_path": "reports/web_20251228_104331_b074f0b3_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "大嘴",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_104810_764a7415",
+      "timestamp": "2025-12-28 10:48:10",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_104810_764a7415.jpg",
+      "report_path": "reports/web_20251228_104810_764a7415_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_110037_b2b55cf2",
+      "timestamp": "2025-12-28 11:00:37",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_110037_b2b55cf2.jpg",
+      "report_path": "reports/web_20251228_110037_b2b55cf2_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_114022_6b2fa11e",
+      "timestamp": "2025-12-28 11:40:22",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_114022_6b2fa11e.jpg",
+      "report_path": "reports/web_20251228_114022_6b2fa11e_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_114844_d8561430",
+      "timestamp": "2025-12-28 11:48:44",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_114844_d8561430.jpg",
+      "report_path": "reports/web_20251228_114844_d8561430_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_115700_03b25fc5",
+      "timestamp": "2025-12-28 11:57:00",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_115700_03b25fc5.jpg",
+      "report_path": "reports/web_20251228_115700_03b25fc5_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_120902_ae85ef90",
+      "timestamp": "2025-12-28 12:09:02",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_120902_ae85ef90.jpg",
+      "report_path": "reports/web_20251228_120902_ae85ef90_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "塌鼻",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_121539_df7d9ae0",
+      "timestamp": "2025-12-28 12:15:39",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_121539_df7d9ae0.jpg",
+      "report_path": "reports/web_20251228_121539_df7d9ae0_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "大嘴",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_124641_74d750ae",
+      "timestamp": "2025-12-28 12:46:41",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_124641_74d750ae.jpg",
+      "report_path": "reports/web_20251228_124641_74d750ae_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_124732_33107649",
+      "timestamp": "2025-12-28 12:47:32",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_124732_33107649.jpg",
+      "report_path": "reports/web_20251228_124732_33107649_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_125031_477b28d7",
+      "timestamp": "2025-12-28 12:50:31",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_125031_477b28d7.jpg",
+      "report_path": "reports/web_20251228_125031_477b28d7_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_131104_daa0319f",
+      "timestamp": "2025-12-28 13:11:04",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_131104_daa0319f.jpg",
+      "report_path": "reports/web_20251228_131104_daa0319f_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_131317_e6d52fa6",
+      "timestamp": "2025-12-28 13:13:17",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_131317_e6d52fa6.jpg",
+      "report_path": "reports/web_20251228_131317_e6d52fa6_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_131728_6a37b2dd",
+      "timestamp": "2025-12-28 13:17:28",
+      "source": "web",
+      "gender": "male",
+      "photo_path": "photos/web_20251228_131728_6a37b2dd.jpg",
+      "report_path": "reports/web_20251228_131728_6a37b2dd_report.txt",
+      "features": {
+        "forehead": "狭窄",
+        "eyes": "大眼",
+        "nose": "适中",
+        "mouth": "适中",
+        "face_shape": "圆脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_221616_38ab61ca",
+      "timestamp": "2025-12-28 22:16:16",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_221616_38ab61ca.jpg",
+      "report_path": "reports/web_20251228_221616_38ab61ca_report.txt",
+      "features": {
+        "forehead": "适中",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "大嘴",
+        "face_shape": "长脸"
+      }
+    },
+    {
+      "analysis_id": "web_20251228_221832_92e4861f",
+      "timestamp": "2025-12-28 22:18:32",
+      "source": "web",
+      "gender": "female",
+      "photo_path": "photos/web_20251228_221832_92e4861f.jpg",
+      "report_path": "reports/web_20251228_221832_92e4861f_report.txt",
+      "features": {
+        "forehead": "适中",
+        "eyes": "大眼",
+        "nose": "高挺",
+        "mouth": "大嘴",
+        "face_shape": "长脸"
+      }
+    }
+  ],
+  "total_count": 58
+}

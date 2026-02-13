@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI面相分析系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .upload-area {
+            border: 2px dashed #667eea;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9ff;
+            margin-bottom: 30px;
+        }
+
+        .upload-area:hover {
+            border-color: #764ba2;
+            background: #f0f2ff;
+        }
+
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background: #e8ebff;
+            transform: scale(1.02);
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .upload-text {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .upload-hint {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .form-group select,
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .form-group select:focus,
+        .form-group input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn-analyze {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-analyze:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-analyze:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .result {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8f9ff;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .result h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .result-content {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.8;
+            max-height: 800px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+
+        /* 自定义滚动条样式 */
+        .result-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .result-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .result-content::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+
+        .result-content::-webkit-scrollbar-thumb:hover {
+            background: #764ba2;
+        }
+
+        /* Markdown样式 */
+        .result-content h2 {
+            color: #764ba2;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .result-content h3 {
+            color: #667eea;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .result-content h4 {
+            color: #5568d3;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #5568d3;
+            padding-bottom: 6px;
+        }
+
+        .result-content strong {
+            color: #333;
+            font-weight: 700;
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+            padding: 0 4px;
+        }
+
+        .result-content em {
+            font-style: italic;
+            color: #666;
+        }
+
+        .result-content p {
+            margin-bottom: 12px;
+        }
+
+        .result-content ul, .result-content ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .result-content li {
+            margin-bottom: 6px;
+        }
+
+        .result-content ul li::marker {
+            color: #667eea;
+        }
+
+        .progress-message {
+            color: #667eea;
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background: #f0f2ff;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+
+        .error {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3f3;
+            border-left: 4px solid #ff4444;
+            border-radius: 8px;
+            color: #d32f2f;
+            font-size: 14px;
+        }
+
+        .preview {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .preview img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .preview .remove-btn {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI面相分析系统</h1>
+            <p>基于传统古籍与现代AI技术的专业面相分析</p>
+        </div>
+
+        <form id="uploadForm">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📸</div>
+                <div class="upload-text">点击或拖拽上传照片</div>
+                <div class="upload-hint">支持 JPG、PNG 格式，建议正面清晰照片</div>
+                <input type="file" id="photoInput" accept="image/jpeg,image/png" style="display: none;">
+            </div>
+
+            <div class="preview" id="preview">
+                <img id="previewImage" src="" alt="预览">
+                <br>
+                <button type="button" class="remove-btn" onclick="removePhoto()">移除照片</button>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">性别</label>
+                <select id="gender" name="gender" required>
+                    <option value="">请选择性别</option>
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question">分析要求（可选）</label>
+                <input type="text" id="question" name="question" placeholder="例如：请分析性格特点和近期运势">
+            </div>
+
+            <button type="submit" class="btn-analyze" id="submitBtn" disabled>开始分析</button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p style="color: #666; font-weight: 500;">AI正在分析中，请稍候...</p>
+            <p style="color: #999; font-size: 13px; margin-top: 8px;">预计需要 10-30 秒，请耐心等待</p>
+        </div>
+
+        <div class="result" id="result">
+            <h2>分析结果</h2>
+            <div id="progressMessages"></div>
+            <div class="result-content" id="resultContent"></div>
+        </div>
+
+        <div class="error" id="error"></div>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const photoInput = document.getElementById('photoInput');
+        const preview = document.getElementById('preview');
+        const previewImage = document.getElementById('previewImage');
+        const submitBtn = document.getElementById('submitBtn');
+        const form = document.getElementById('uploadForm');
+        const loading = document.getElementById('loading');
+        const result = document.getElementById('result');
+        const resultContent = document.getElementById('resultContent');
+        const progressMessages = document.getElementById('progressMessages');
+        const error = document.getElementById('error');
+
+        // Markdown转HTML函数
+        function parseMarkdown(text) {
+            let html = text;
+
+            // 处理一级标题 (# 标题)
+            html = html.replace(/^#\s+(.+)$/gm, '<h2>$1</h2>');
+
+            // 处理二级标题 (## 标题)
+            html = html.replace(/^##\s+(.+)$/gm, '<h3>$1</h3>');
+
+            // 处理三级标题 (### 标题)
+            html = html.replace(/^###\s+(.+)$/gm, '<h4>$1</h4>');
+
+            // 处理加粗 (**)
+            html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+            // 处理斜体 (*)
+            html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+            // 处理列表 (-)
+            html = html.replace(/^[\s]*-\s+(.+)$/gm, '<li>$1</li>');
+            html = html.replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>');
+
+            // 处理段落（双换行）
+            html = html.split('\n\n').map(p => {
+                if (!p.match(/^<[hu]/) && !p.match(/^<li/)) {
+                    return `<p>${p.replace(/\n/g, '<br>')}</p>`;
+                }
+                return p;
+            }).join('\n');
+
+            return html;
+        }
+
+        // 点击上传区域
+        uploadArea.addEventListener('click', () => {
+            photoInput.click();
+        });
+
+        // 文件选择
+        photoInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                showPreview(file);
+            }
+        });
+
+        // 拖拽上传
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.type.startsWith('image/')) {
+                photoInput.files = e.dataTransfer.files;
+                showPreview(file);
+            }
+        });
+
+        // 显示预览
+        function showPreview(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                previewImage.src = e.target.result;
+                preview.style.display = 'block';
+                uploadArea.style.display = 'none';
+                submitBtn.disabled = false;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // 移除照片
+        function removePhoto() {
+            photoInput.value = '';
+            preview.style.display = 'none';
+            uploadArea.style.display = 'block';
+            submitBtn.disabled = true;
+        }
+
+        // 表单提交 - 使用流式响应
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const file = photoInput.files[0];
+            if (!file) {
+                showError('请先上传照片');
+                return;
+            }
+
+            const gender = document.getElementById('gender').value;
+            if (!gender) {
+                showError('请选择性别');
+                return;
+            }
+
+            // 显示加载状态
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            result.style.display = 'none';
+            error.style.display = 'none';
+            progressMessages.innerHTML = '';
+            resultContent.innerHTML = '';
+            result.style.display = 'block';
+
+            // 准备表单数据
+            const formData = new FormData();
+            formData.append('photo', file);
+            formData.append('gender', gender);
+
+            const question = document.getElementById('question').value;
+            if (question) {
+                formData.append('question', question);
+            }
+
+            try {
+                // 使用流式API
+                const response = await fetch('/api/analyze-stream', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error('分析请求失败');
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+                let fullText = '';
+
+                loading.style.display = 'none';
+
+                while (true) {
+                    const { done, value } = await reader.read();
+
+                    if (done) break;
+
+                    buffer += decoder.decode(value, { stream: true });
+                    const lines = buffer.split('\n');
+                    buffer = lines.pop() || '';
+
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const data = JSON.parse(line.slice(6));
+
+                                if (data.type === 'start') {
+                                    //addProgressMessage(data.message); 
+                                    // 显示开始消息
+                                } else if (data.type === 'progress') {
+                                    //addProgressMessage(`${data.message}                    
+                                    //-(${data.timing || ''})`);
+                                    // 显示进度消息
+                                } else if (data.type === 'content') {
+                                    fullText += data.content;
+                                    resultContent.innerHTML = parseMarkdown(fullText);
+                                    // 自动滚动到底部
+                                    resultContent.scrollTop = resultContent.scrollHeight;
+                                } else if (data.type === 'complete') {
+                                    addProgressMessage(`✅ 分析完成！总耗时: ${data.timing}`);
+                                    submitBtn.disabled = false;
+                                } else if (data.type === 'error') {
+                                    showError(data.error || '分析失败');
+                                    submitBtn.disabled = false;
+                                }
+                            } catch (e) {
+                                console.error('解析SSE数据失败:', e);
+                            }
+                        }
+                    }
+                }
+
+            } catch (err) {
+                showError('网络错误，请检查连接');
+                console.error(err);
+                submitBtn.disabled = false;
+                loading.style.display = 'none';
+            }
+        });
+
+        // 添加进度消息
+        function addProgressMessage(message) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'progress-message';
+            msgDiv.textContent = message;
+            progressMessages.appendChild(msgDiv);
+            // 保持最多3条消息
+            while (progressMessages.children.length > 3) {
+                progressMessages.removeChild(progressMessages.firstChild);
+            }
+        }
+
+        // 显示错误
+        function showError(message) {
+            error.textContent = message;
+            error.style.display = 'block';
+            setTimeout(() => {
+                error.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

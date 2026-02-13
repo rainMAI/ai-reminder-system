@@ -1,0 +1,137 @@
+/* Web Reminder 紫色渐变主题覆盖 */
+/* 修改背景为紫色渐变，匹配对话管理界面风格 */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    min-height: 100vh;
+}
+
+/* 修改主容器背景 */
+.dashboard,
+#app {
+    background: transparent !important;
+}
+
+/* 修改header背景为白色卡片 */
+.header {
+    background: white !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    margin: 20px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border-bottom: none !important;
+}
+
+/* 修改标题颜色 */
+.header h1,
+.title h1 {
+    color: #2c3e50 !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+.subtitle {
+    color: #7f8c8d !important;
+}
+
+/* 修改卡片背景为白色 */
+.device-card,
+.reminder-card {
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    border: none !important;
+}
+
+/* 修改卡片文字颜色 */
+.device-name,
+.reminder-text {
+    color: #2c3e50 !important;
+}
+
+/* 修改按钮样式匹配新主题 */
+.btn-primary,
+.select-btn,
+.btn-submit {
+    background: #667eea !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.select-btn:hover,
+.btn-submit:hover {
+    background: #5568d3 !important;
+}
+
+/* 修改次级按钮 */
+.btn-secondary,
+.btn-cancel {
+    background: #95a5a6 !important;
+    color: white !important;
+}
+
+.btn-secondary:hover,
+.btn-cancel:hover {
+    background: #7f8c8d !important;
+}
+
+/* 修改标签徽章样式 */
+.badge,
+.type-badge {
+    background: #667eea !important;
+    color: white !important;
+}
+
+/* 修改空状态样式 */
+.empty-state {
+    background: white !important;
+    border-radius: 12px !important;
+}
+
+.empty-icon {
+    color: #95a5a6 !important;
+}
+
+/* 修改模态框样式 */
+.modal-content {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+}
+
+/* 修改表单输入框样式 */
+.form-input,
+input[type="text"],
+input[type="time"] {
+    background: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+    color: #2c3e50 !important;
+}
+
+.form-input:focus,
+input:focus {
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+/* 修改标签颜色 */
+label,
+.form-label {
+    color: #2c3e50 !important;
+}
+
+/* 修改小字体颜色 */
+small,
+.hint {
+    color: #7f8c8d !important;
+}
+
+/* 修改section标题颜色 */
+.section-header h2 {
+    color: #2c3e50 !important;
+}
+
+/* 修改count badge */
+.count-badge {
+    background: #667eea !important;
+}

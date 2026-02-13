@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251228_110037_b2b55cf2",
+  "timestamp": "2025-12-28 11:00:37",
+  "source": "web",
+  "gender": "male",
+  "question": "请分析此人的面相，包括性格特点和近期运势",
+  "photo_path": "photos/web_20251228_110037_b2b55cf2.jpg",
+  "report_path": "reports/web_20251228_110037_b2b55cf2_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "适中",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.181
+    },
+    "middle": {
+      "ratio": 0.451
+    },
+    "lower": {
+      "ratio": 0.368
+    },
+    "eyes": {
+      "left_ratio": 0.593,
+      "right_ratio": 0.593
+    },
+    "nose": {
+      "ratio": 1.821
+    },
+    "mouth": {
+      "ratio": 0.357
+    },
+    "face": {
+      "width": 0.503,
+      "height": 0.458,
+      "shape_ratio": 0.911
+    }
+  },
+  "report_length": 2713,
+  "photo_size": 204559
+}

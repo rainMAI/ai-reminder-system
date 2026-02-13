@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251228_221616_38ab61ca",
+  "timestamp": "2025-12-28 22:16:16",
+  "source": "web",
+  "gender": "female",
+  "question": "财富婚姻老公健康子女",
+  "photo_path": "photos/web_20251228_221616_38ab61ca.jpg",
+  "report_path": "reports/web_20251228_221616_38ab61ca_report.txt",
+  "features": {
+    "forehead": "适中",
+    "eyes": "大眼",
+    "nose": "高挺",
+    "mouth": "大嘴",
+    "face_shape": "长脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.272
+    },
+    "middle": {
+      "ratio": 0.291
+    },
+    "lower": {
+      "ratio": 0.437
+    },
+    "eyes": {
+      "left_ratio": 4.527,
+      "right_ratio": 4.527
+    },
+    "nose": {
+      "ratio": 3.317
+    },
+    "mouth": {
+      "ratio": 3.837
+    },
+    "face": {
+      "width": 0.001,
+      "height": 0.016,
+      "shape_ratio": 15.359
+    }
+  },
+  "report_length": 1161,
+  "photo_size": 7088954
+}

@@ -1,0 +1,44 @@
+{
+  "analysis_id": "web_20251228_124732_33107649",
+  "timestamp": "2025-12-28 12:47:32",
+  "source": "web",
+  "gender": "male",
+  "question": "看官运和婚姻",
+  "photo_path": "photos/web_20251228_124732_33107649.jpg",
+  "report_path": "reports/web_20251228_124732_33107649_report.txt",
+  "features": {
+    "forehead": "狭窄",
+    "eyes": "大眼",
+    "nose": "高挺",
+    "mouth": "适中",
+    "face_shape": "圆脸"
+  },
+  "measurements": {
+    "forehead": {
+      "ratio": 0.189
+    },
+    "middle": {
+      "ratio": 0.488
+    },
+    "lower": {
+      "ratio": 0.323
+    },
+    "eyes": {
+      "left_ratio": 0.683,
+      "right_ratio": 0.683
+    },
+    "nose": {
+      "ratio": 2.06
+    },
+    "mouth": {
+      "ratio": 0.362
+    },
+    "face": {
+      "width": 0.441,
+      "height": 0.414,
+      "shape_ratio": 0.938
+    }
+  },
+  "report_length": 1345,
+  "photo_size": 4186137
+}
