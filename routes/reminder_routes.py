@@ -112,8 +112,13 @@ def create_reminder():
             # Parse HH:MM and calculate today's timestamp
             try:
                 hours, minutes = map(int, scheduled_time.split(':'))
-                today_midnight = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-                scheduled_timestamp = int(today_midnight.timestamp()) + hours * 3600 + minutes * 60
+                # 使用本地时间（北京时区）计算目标时间，然后转换为UTC时间戳存储
+                now_local = datetime.now()
+                today_midnight = now_local.replace(hour=0, minute=0, second=0, microsecond=0)
+                # 先算出本地时间的时间戳
+                local_timestamp = int(today_midnight.timestamp()) + hours * 3600 + minutes * 60
+                # 转换为UTC时间戳
+                scheduled_timestamp = local_timestamp - int(time.timezone)
 
                 # Check if the calculated time is already in the past
                 current_ts = int(time.time())
@@ -403,8 +408,11 @@ def update_reminder(reminder_id: int):
 
             # Also update scheduled_timestamp to today's date with the new time
             hours, minutes = map(int, data['scheduled_time'].split(':'))
-            today_midnight = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-            new_timestamp = int(today_midnight.timestamp()) + hours * 3600 + minutes * 60
+            # 使用本地时间（北京时区）计算，然后转换为UTC时间戳
+            now_local = datetime.now()
+            today_midnight = now_local.replace(hour=0, minute=0, second=0, microsecond=0)
+            local_timestamp = int(today_midnight.timestamp()) + hours * 3600 + minutes * 60
+            new_timestamp = local_timestamp - int(time.timezone)
             update_fields.append("scheduled_timestamp = ?")
             params.append(new_timestamp)
 
@@ -553,8 +561,8 @@ def get_reminder_stats():
         db = get_db()
 
         # 获取当前时间（今天0点）
-        from datetime import datetime, timedelta
-        today_midnight = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+        from datetime import datetime, timedelta, timezone
+        today_midnight = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=timezone.utc)
         today_timestamp = int(today_midnight.timestamp())
 
         # 查询活跃提醒数量（status = 'active'）
