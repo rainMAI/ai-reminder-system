@@ -107,7 +107,7 @@ class ChatService:
                 """SELECT user_text, ai_text, server_timestamp, created_at
                    FROM chat_messages
                    WHERE device_id = ? AND server_timestamp >= ? AND server_timestamp < ?
-                   ORDER BY server_timestamp ASC""",
+                   ORDER BY server_timestamp DESC""",
                 (device_id, start_ts, end_ts),
                 fetch_all=True
             )
