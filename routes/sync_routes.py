@@ -103,26 +103,20 @@ def sync_pull():
             # Convert scheduled_time (HH:MM) to timestamp if it's a recurring reminder
             timestamp = scheduled_timestamp  # for one-time
             if reminder_type == 'daily' and scheduled_time:
-                # For daily reminders, calculate next occurrence based on scheduled_time
-                # Parse HH:MM and calculate next occurrence in local time, then convert to UTC
+                # For daily reminders: timestamp() returns UTC seconds directly
                 try:
+                    from datetime import timedelta
                     hours, minutes = map(int, scheduled_time.split(':'))
-                    now_local = datetime.now()
-                    today_midnight = now_local.replace(hour=0, minute=0, second=0, microsecond=0)
-                    # Calculate today's occurrence timestamp in local time
-                    today_occurrence = int(today_midnight.timestamp()) + hours * 3600 + minutes * 60
-                    # Convert to UTC timestamp
-                    if today_occurrence > current_time:
-                        # Today occurrence hasn't passed yet
-                        timestamp = today_occurrence - int(time.timezone)
-                    else:
-                        # Already passed today, schedule for tomorrow
-                        timestamp = (today_occurrence + 86400) - int(time.timezone)
-                    print(f"[DailyReminder] scheduled_time={scheduled_time}, calculated timestamp={timestamp}")
+                    now = datetime.now()
+                    target = now.replace(hour=hours, minute=minutes, second=0, microsecond=0)
+                    if target < now:
+                        target = target + timedelta(days=1)
+                    # timestamp() returns UTC seconds directly
+                    timestamp = int(target.timestamp())
+                    print(f"[DailyReminder] scheduled_time={scheduled_time}, timestamp={timestamp}")
                 except Exception as e:
-                    # Fallback: 1 hour from now
                     timestamp = int(time.time()) + 3600
-                    print(f"[DailyReminder] Error calculating timestamp: {e}")
+                    print(f"[DailyReminder] Error: {e}")
             elif reminder_type == 'once' and scheduled_timestamp:
                 # For one-time reminders, check if expired
                 if scheduled_timestamp < current_time:
